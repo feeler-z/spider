@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ch.spider.dao.ArticleDao">
+
+    <select id="resultqueryObject" resultType="com.ch.spider.entity.ArticleEntity">
+		select * from tb_article
+	</select>
+
+
+	<insert id="addResultEntity" parameterType="com.ch.spider.entity.ArticleEntity">
+           INSERT  INTO tb_article (title,referer,digest,author,publish_id,type_id,cover_path,content,pageviews,collect,thumb,status,publish_time,create_time,update_time,del_flag,tagwords,resource,copyright,remark,mold,top)
+           VALUES (#{title},#{referer},#{digest},#{author},#{publishId},#{typeId},#{coverPath},#{content},#{pageviews},#{collect},#{thumb},#{status},#{publishTime},#{createTime},#{updateTime},#{delFlag},#{tagwords},#{resource},#{copyright},#{remark},#{mold},#{top})
+           ON DUPLICATE KEY UPDATE referer=#{referer}
+    </insert>
+</mapper>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ch.spider.dao.DataQuickDao">
+
+    <insert id="addResultEntity" parameterType="com.ch.spider.entity.DataQuickEntity">
+           INSERT  INTO tb_dataquick (title,content,status,create_time,update_time,del_flag,field,field1,referer,author)
+           VALUES (#{title},#{content},#{status},#{createTime},#{updateTime},#{delFlag},#{field},#{field1},#{referer},#{author})
+           ON DUPLICATE KEY UPDATE referer=#{referer}
+    </insert>
+</mapper>

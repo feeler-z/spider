@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ch.spider.dao.MemberDao">
+
+    <select id="allqueryObject" parameterType="java.lang.String" resultType="com.ch.spider.entity.MemberEntity">
+		select * from tb_member where salt = #{salt}
+	</select>
+
+    <select id="resultqueryObject"  resultType="com.ch.spider.entity.MemberEntity">
+		select * from tb_member
+	</select>
+
+    <!--<insert id="addResultEntity" parameterType="com.ch.spider.entity.ArticleEntity">-->
+           <!--INSERT  INTO result (typeId,author,cover_path,digest,referer,title,content)-->
+           <!--VALUES (2,#{articleAuthName},#{abstractImg},#{abstractcontent},#{articleSourceUrl},#{articleTitle},#{articleContent})-->
+           <!--ON DUPLICATE KEY UPDATE salt=#{salt}-->
+<!--</insert>-->
+
+    <update id="update" parameterType="com.ch.spider.entity.MemberEntity">
+        UPDATE tb_member set  nickname=#{nickname},imgpath=#{imgpath},introduce=#{introduce} WHERE salt=#{salt}
+    </update>
+
+
+</mapper>
