@@ -9,5 +9,4 @@
 #### 官方网站 https://zhang123.vip    博客: https://zhang123.vip/blog
 
 
-![](https://zhang123.vip/images/designer-pic.jpg)
-<img src="https://zhang123.vip/images/designer-pic.jpg"  alt="甲乙丙科技">
+<img src="https://zhang123.vip/images/designer-pic.jpg" hight="120px" width="120px" alt="甲乙丙科技">
