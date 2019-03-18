@@ -10,4 +10,4 @@
 
 
 
-<img src="https://zhang123.vip/images/designer-pic.jpg" hight="60%"  width="60%" alt="甲乙丙科技">
+<img src="https://zhang123.vip/images/designer-pic.jpg"  alt="甲乙丙科技">
