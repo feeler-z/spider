@@ -10,4 +10,4 @@
 
 
 
-![甲乙丙科技](https://zhang123.vip/images/designer-pic.jpg)
+<img src="https://zhang123.vip/images/designer-pic.jpg" hight="60px"  width="60px" alt="甲乙丙科技">
